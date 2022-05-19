@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import React, { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
-const GifExpertApp = () => {
-
-  const [categories, setCategories] = useState(['My neighbor Totoro']);
+const GifExpertApp = ({ defaultCategories = ["Mononoke"] }) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
@@ -13,15 +12,12 @@ const GifExpertApp = () => {
       <hr />
 
       <ol>
-        {categories.map(category => 
-          <GifGrid 
-            category={category}
-            key={category}
-          />
-        )}
+        {categories.map((category) => (
+          <GifGrid category={category} key={category} />
+        ))}
       </ol>
     </>
-  )
-}
+  );
+};
 
 export default GifExpertApp;

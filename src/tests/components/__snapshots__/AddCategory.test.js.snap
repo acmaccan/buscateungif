@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test AddCategory should render AddCategory correctly 1`] = `
+<Fragment>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Tipeate algo"
+      type="text"
+      value=""
+    />
+  </form>
+</Fragment>
+`;

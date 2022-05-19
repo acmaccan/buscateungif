@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GifExpertApp should first 1`] = `
+<Fragment>
+  <h2>
+    BuscateUnGif
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="My neighbor Totoro"
+      key="My neighbor Totoro"
+    />
+    <GifGrid
+      category="Spirited Away"
+      key="Spirited Away"
+    />
+    <GifGrid
+      category="Princess Mononoke"
+      key="Princess Mononoke"
+    />
+  </ol>
+</Fragment>
+`;
+
+exports[`Test GifExpertApp should render GifExpertApp correctly 1`] = `
+<Fragment>
+  <h2>
+    BuscateUnGif
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="Mononoke"
+      key="Mononoke"
+    />
+  </ol>
+</Fragment>
+`;
